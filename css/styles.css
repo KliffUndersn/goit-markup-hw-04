@@ -129,11 +129,13 @@ header > .container,
 }
 .contact-list-icon {
   margin-right: 10px;
-  fill: var(--color-grey);
+  fill: currentColor;
 }
-.contact-item:hover .contact-list-icon {
+.contact-item:hover .contact-list-icon,
+.contact-item:focus .contact-list-icon {
   fill: var(--color-blue);
 }
+
 /* /header */
 /* hero */
 .hero-container {
@@ -156,9 +158,9 @@ header > .container,
   display: flex;
   padding-top: 200px;
   padding-bottom: 200px;
- margin-left: auto;
- margin-right: auto;
- max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -289,6 +291,7 @@ header > .container,
 }
 .employer-card {
   padding: 30px 32px;
+  background-color: #fff;
 }
 /* footer*/
 
@@ -307,7 +310,7 @@ header > .container,
 .footer-color {
   background-color: #2f303a;
 }
-.div-footer{
+.div-footer {
   display: flex;
   flex-direction: row;
 }
@@ -393,13 +396,14 @@ header > .container,
   flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-top: 30px;
-
 }
 .title-li:hover,
-.title-li:focus{  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+.title-li:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  border-color: transparent;}
+  border-color: transparent;
+}
 
 .galery-title {
   margin-bottom: 4px;
@@ -407,6 +411,9 @@ header > .container,
 
 .gallery-card {
   padding: 20px 24px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
 }
 .contacts-mar {
   margin-bottom: 9px;
@@ -428,7 +435,7 @@ header > .container,
   display: flex;
 }
 .social-list-link:hover,
-.social-list-link :focus {
+.social-list-link:focus {
   background-color: var(--color-blue);
 }
 .social-list-icon {
@@ -438,6 +445,7 @@ header > .container,
 .social-list-link:focus .social-list-icon {
   fill: var(--color-white);
 }
+
 .clients {
   padding-top: 94px;
   font-weight: 700;
@@ -499,12 +507,10 @@ header > .container,
   fill: #fff;
 }
 .join-list {
-margin-top: 12px;
+  margin-top: 12px;
   margin-left: 70px;
-
 }
 .join {
- 
   text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
@@ -516,9 +522,8 @@ margin-top: 12px;
 .our-social-link-list {
   display: flex;
   flex-direction: row;
-  
 }
-.our-social-list-item{
+.our-social-list-item {
   padding-right: 10px;
 }
 .our-social-list-link {
@@ -528,6 +533,5 @@ margin-top: 12px;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-background: rgba(255, 255, 255, 0.1);
-
+  background: rgba(255, 255, 255, 0.1);
 }
