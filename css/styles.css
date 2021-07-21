@@ -75,7 +75,7 @@ header > .container,
 }
 .nav-link {
   padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 33px;
 }
 
 /* logo */
@@ -113,6 +113,21 @@ header > .container,
 }
 .active {
   color: var(--color-blue);
+  position: relative;
+}
+.active:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+  background-color: var(--color-blue);
+  display: inline-block;
+  border-radius: 2px;
+  margin: 0;
+  padding: 0;
 }
 .contact-list {
   display: flex;
